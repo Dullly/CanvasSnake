@@ -1,6 +1,6 @@
-# CanvasSnake
-贪吃蛇小游戏
-author: Dullly
+# 贪吃蛇小游戏
+#### author: Dullly
+
 ---
 
 以儿时热门游戏贪吃蛇作为互动游戏。用户在游戏中可以赢取随机出现的红包（红包概率出现，且一场仅出现一次），并记录用户分数。使用<code>Canvas</code>实现
