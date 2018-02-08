@@ -1,0 +1,258 @@
+/* 设置宽高 */
+/* 水平居中 */
+/* 未知宽高水平/垂直居中 */
+/* 文字溢出隐藏 */
+/* 单行或多行文字超出点点点 */
+/* 伸缩布局容器 */
+/* 伸缩性 */
+/* 伸缩方向为垂直方向 */
+/* 侧轴方向居中对齐 */
+/* 主轴和侧轴方向居中对齐 */
+/* 图片自适应 */
+/* 图片变灰 */
+/* 清除浮动 */
+/* 三角形，包括直角 */
+/* 常用箭头（边框） */
+/* 重置样式 */
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+abbr,
+article,
+aside,
+command,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+meter,
+nav,
+output,
+progress,
+section,
+summary,
+time,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+th,
+figcaption {
+  font-weight: normal;
+  font-style: normal;
+}
+fieldset,
+iframe {
+  border: none;
+}
+caption,
+th {
+  text-align: left;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+ul {
+  list-style: none outside;
+}
+a,
+ins {
+  text-decoration: none;
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure,
+figcaption,
+details,
+summary {
+  display: block;
+}
+img,
+a img {
+  border: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+/* 去掉点击后Android边框和IOS的默认背景 */
+a,
+button,
+input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+body {
+  font-family: PingFangSC-Regular, Helvetica, 'Heiti SC';
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+}
+/* 隐藏 & 显示 配合js */
+.fn-hide {
+  display: none!important;
+}
+.fn-show {
+  display: block;
+}
+.fn-pr {
+  position: relative;
+}
+/* 浮动 */
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+/* 清除浮动 */
+.fn-clear {
+  zoom: 1;
+}
+.fn-clear:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: '.';
+}
+.imgauto {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.db {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.v {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.fx1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.vm {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.vh {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-align: center;
+  box-align: center;
+}
+.text-of {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-of-two {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  display: -webkit-box;
+  display: box;
+}
+.text-center {
+  text-align: center;
+}
+/* 懒加载图片背景置灰 */
+.lazyload-base-bg {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+/* 半透明遮罩[[ */
+.layer {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* 半透明遮罩]] */
+/* 懒惰加载结构loading[[ */
+.load-floor {
+  min-height: 300px;
+  background: url(/res/img/core/h5/tail-spin.svg) center top no-repeat;
+  background-size: 40px 40px;
+}
+/* 懒惰加载结构loading]] */

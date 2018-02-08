@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>贪吃蛇Demo</title>
+	<link rel="stylesheet" href="./css/core.css">
+    <script src="./js/flexible.js"></script>
+	<link rel="stylesheet" href="./css/tips.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <article class="page">
+        <section class="p-game">
+            <div class="box-top">
+                <!-- 游戏规则 -->
+                <a href="javascript:;" class="rule-btn js-rule-btn" data-fql-stat="BTN_RULE"></a>
+                <div class="game js-game">
+                    <div class="can-wrap js-can-wrap">
+                        <canvas id="gameCanvas"></canvas>
+                    </div>
+                    <img src="./img/snake.png" class="fn-hide" id="g_source">
+                </div>
+
+                <div class="p-raider">
+                    <h4 class="h4-tit">6·1 童趣贪吃蛇</h4>
+                    <h4 class="info-big">玩法攻略</h4>
+                    <p class="info">童真美好的回忆，是不会随时间而流逝的。在这个“六一”，用点击屏幕变换行动方向的方式，畅玩童年经典游戏贪吃蛇，来赢取为你准备的618分期趴大礼吧。</p>
+                    <ul>
+                        <li class="li-info">
+                            <i class="b-ball"></i>
+                            积分道具，右下数字为当前分值。
+                        </li>
+                        <li class="li-info">
+                            <i class="r-bag"></i>
+                            红包道具，吞食后即可在游戏结束后随机获得代金券1张。
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="btn-display js-btn-play" data-fql-stat="BTN_GAME_TIMES_OVER"></a>
+                    <p class="btn-info">明天继续来赢神券吧，亲！</p>
+                    <!-- 装饰[[ -->
+                    <i class="w-snake"></i>
+                    <i class="r-snake"></i>
+                    <i class="g-ball ball-1"></i>
+                    <i class="g-ball ball-2"></i>
+                    <i class="g-ball ball-3"></i>
+                    <i class="g-ball ball-4"></i>
+                    <i class="g-ball ball-5"></i>
+                    <!-- 装饰]] -->
+                </div>
+                <div class="bottom">
+                    <p class="high-score">最高纪录:<em class="js-top-score">0</em></p>
+                    <div class="m-wrap">
+                        <ul class="marquee js-marquee show" style="margin-top: -23px; transition: margin-top 0.6s linear 0s;">
+                            <li>跑马灯跑马灯跑马灯跑马灯</li>
+                            <li>恭喜张同学获得500元实物券</li>
+                            <li>恭喜张同学获得500元实物券2</li>
+                            <li>恭喜张同学获得500元实物券3</li>
+                            <li>跑马灯跑马灯跑马灯跑马灯</li>
+                            <li>恭喜张同学获得500元实物券</li>
+                            <li>恭喜张同学获得500元实物券2</li>
+                            <li>恭喜张同学获得500元实物券3</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-rank">
+            <img src="./img/box-bottom.jpg" class="imgauto bg-img">
+            <div class="btn-wrap">
+                <a href="javascript:;" class="b-btn js-share-btn" data-is-fixed="1" data-fql-stat="BTN_INVITATION"><div class="msg-warp"><span>赢618现金券</span><br>邀请好友PK</div></a>
+                <a href="javascript:;" class="r-btn js-draw-prize-btn" data-fql-stat="BTN_LOTTERY">抽神券<em class="js-get-prize-times">0</em>次</a>
+                <!-- 我的奖品 -->
+                <a href="http://sale.fenqile.com/VlVdQkhRVFVFSFFQWUVP/prize.html" class="prize-btn" data-fql-stat="BTN_MY_PRIZE"></a>
+            </div>
+            <!-- 胜利图标为win，失败为lose -->
+            <!-- 右胜左负添加class="r-l"，默认左胜右负 -->
+            <ul class="rank-ul js-prize-item"><li style="line-height: 45px;font-size: 14px;background-color:#db5b4b;">您还没PK任何好友！</li></ul>
+            <div class="mask"></div>
+        </section>
+    </article>
+
+    <script src="./js/zepto.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/index2.js"></script>
+</body>
+</html>

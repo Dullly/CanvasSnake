@@ -1,0 +1,166 @@
+/* 设置宽高 */
+/* 水平居中 */
+/* 未知宽高水平/垂直居中 */
+/* 文字溢出隐藏 */
+/* 单行或多行文字超出点点点 */
+/* 伸缩布局容器 */
+/* 伸缩性 */
+/* 伸缩方向为垂直方向 */
+/* 侧轴方向居中对齐 */
+/* 主轴和侧轴方向居中对齐 */
+/* 图片自适应 */
+/* 图片变灰 */
+/* 清除浮动 */
+/* 三角形，包括直角 */
+/* 常用箭头（边框） */
+.box {
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(63, 63, 63, 0.5);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.g-box {
+  width: 80%;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+.g-box .g-box-title {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 10px;
+  text-align: center;
+  color: #3f3f3f;
+  color: #666;
+}
+.g-box .g-box-foot {
+  font-size: 18px;
+  height: 50px;
+  text-align: center;
+  border-top: 1px solid #dadada;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.g-box .g-box-foot a {
+  border-left: 1px solid #dadada;
+  text-decoration: none;
+  color: #a2a2a2;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.g-box .g-box-foot a:first-child {
+  border-left: none;
+}
+.g-box .g-box-foot a:last-child {
+  color: #3b9bff;
+}
+/* 操作提示浮层 */
+.msg-mode {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  margin-left: -140px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.msg-mode img {
+  background: none;
+}
+.msg-mode .msg-text {
+  padding: 16px;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.msg-mode .msg-text img {
+  margin-right: 3px;
+  vertical-align: -2px;
+}
+.msg-mode .loading-text {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.2) url(/res/js/module/tips/h5/1.0.0/tail-spin.svg) no-repeat center center;
+}
+.msg-mode .loading-text img {
+  margin-top: 6px;
+}
+.msg-mode.hide {
+  display: block;
+  -webkit-animation: msg-fadeOut 0.5s 0.2s ease-out both;
+  animation: msg-fadeOut 0.5s 0.2s ease-out both;
+}
+@-webkit-keyframes msg-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes msg-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.msg-mode.show {
+  -webkit-animation: msg-fadeIn 0.5s 0.2s ease-in both;
+  animation: msg-fadeIn 0.5s 0.2s ease-in both;
+}
+@-webkit-keyframes msg-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes msg-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
